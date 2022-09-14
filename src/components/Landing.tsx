@@ -6,7 +6,9 @@ function Landing() {
   return (
     <div className="Landing">
       <Container
-
+css={{
+marginTop:'100px'
+}}
       ><Text
         h1
         size={120}

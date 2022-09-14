@@ -1,22 +1,38 @@
-import { Button } from '@nextui-org/react'
-import React, { useState } from 'react'
-import AboutMe from './AboutMe'
-import Landing from './Landing'
-import NavBar from './NavBar';
-
+import { Button } from "@nextui-org/react";
+import React, { useRef, useState } from "react";
+import AboutMe from "./AboutMe";
+import Landing from "./Landing";
+import NavBar from "./NavBar";
+import Technologies from "./Technologies";
+import'../assets/HomePage.css'
+import Carousel from "./Carousel";
+import ContactMe from "./ContactMe";
+import Footer from "./FooterComponent";
 
 function HomePage(theme: any) {
   const [type, setTheme] = useState(0);
+  // const tech = useRef(null);
+  // const about = useRef(null);
+  // const home = useRef(null);
+  // const projects = useRef(null);
 
+  // const scrollToSection = (elementRef) => {
+  //   window.scrollTo(
+  //     {top: elementRef.current.offsetTop,
+  //     behavior: 'smooth'}
+  //   )
+  // }
   return (
-
-
-      <div>
-        <NavBar />
+    <div>
+      {/* <ImageSlider slides={SliderData} /> */}
+      <NavBar />
         <Landing />
         <AboutMe />
-      </div>
-  )
+        <Technologies />
+        <Carousel />
+        <ContactMe />
+    </div>
+  );
 }
 
-export default HomePage
+export default HomePage;
