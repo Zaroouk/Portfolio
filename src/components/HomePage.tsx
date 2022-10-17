@@ -8,6 +8,7 @@ import'../assets/HomePage.css'
 import Carousel from "./Carousel";
 import ContactMe from "./ContactMe";
 import Footer from "./FooterComponent";
+import TechnologiesV2 from "./TechnologiesV2";
 
 function HomePage(theme: any) {
   const [type, setTheme] = useState(0);
@@ -28,7 +29,8 @@ function HomePage(theme: any) {
       <NavBar />
         <Landing />
         <AboutMe />
-        <Technologies />
+        {/* <Technologies /> */}
+        <TechnologiesV2 />
         <Carousel />
         <ContactMe />
     </div>

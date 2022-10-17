@@ -1,6 +1,5 @@
 import { Container, Text } from "@nextui-org/react";
 import React from "react";
-// import '../assets/Landing.css'
 
 function Landing() {
   return (
@@ -21,7 +20,7 @@ marginTop:'100px'
       >
         Hello World!
       </Text>
-      <Text
+      {/* <Text
         h1
         size={120}
         css={{
@@ -33,7 +32,7 @@ marginTop:'100px'
         weight="bold"
       >
         I'm Emanuel.
-      </Text>
+      </Text> */}
       <Text
         h1
         size={60}

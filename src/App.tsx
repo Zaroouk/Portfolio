@@ -9,6 +9,9 @@ function App() {
   return (
       <div className='app'>
       {/* <NavBar /> */}
+      {/* //!make it fully responsive */}
+      {/* //? themes are ok */}
+      {/* //* look for a good font */}
       <HomePage />
       {/* <FooterComponent /> */}
 </div>

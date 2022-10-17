@@ -1,4 +1,4 @@
-import { Container, Card, Text, Avatar, Grid } from "@nextui-org/react";
+import { Container, Card, Text, Avatar, Grid, Row } from "@nextui-org/react";
 import React from "react";
 import Nico1 from "../assets/img/2c09b129558a3a98dbfdb6fa07d3a1c7ec45beaf_00.jpeg";
 // import Nico2 from '../assets/img/9da003e5af1f109caf34f4ef3db2df8f.jpeg'
@@ -11,32 +11,38 @@ import Demigods3 from "../assets/img/eed8f6e01fb9da7127443f57d739a932.jpeg";
 import Nico4 from "../assets/img/images.jpeg";
 import "../assets/AboutMe.css";
 
-function AboutMe() {
-  return (
-    <div className="About">
+function AboutMe(){
+  return(
+<div className="About">
       <Container
       css={{
         marginTop: "100px",
     }}
       >
-        {/* {props.children} */}
         <Card className="Card-Object">
+          <Grid.Container>
+            <Grid xs={12} sm={12} md={3} lg={3} xl={4} justify="center" css={{margin:'25px'}}>
           <Avatar
             className="avatar"
             src={LeoValdez}
             color="gradient"
             bordered
-          />
+            css={{size:'200px'}}
+          /></Grid><Grid xs={12} sm={12} md={8} lg={8} xl={4}>
+          <Row wrap='wrap' justify="center" css={{margin:'25px'}}>
           <Text h1 className="text-head">
             About Me
           </Text>
-          <Text className="text-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem.
+          <Text
+          css={{mb:'30px'}}
+          className="text-body">
+            Yelloow! Let me tell you a little about myself. I am a Computer Science student and ready to take a great challenge.
+            There is more out there than just waiting, once a wise man said: "You don't know you are regreting something if you haven't tried it yet?"
+            so, with this being said, When are We starting?
           </Text>
+          </Row>
+          </Grid>
+          </Grid.Container>
         </Card>
       </Container>
     </div>

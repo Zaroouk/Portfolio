@@ -10,7 +10,7 @@
 .text-body{
 
 }
-
+/*
 @media only screen and (max-width: 600px) {
     .Card-Object{
         width:90vw;
@@ -22,7 +22,7 @@
         width:150px;
         height:150px;
         position:relative;
-        /* left:10px; */
+
         margin-top: 25px;
     }
     .text-head{
@@ -43,7 +43,7 @@
     .avatar{
         width:150px;
         height:150px;
-        /* position:relative; */
+
         margin-top: 25px;
     }
     .text-head{
@@ -64,7 +64,7 @@
     .avatar{
         width:150px;
         height:150px;
-        /* position:relative; */
+
         margin-top: 25px;
     }
     .text-head{
@@ -101,4 +101,4 @@
         position:relative;
         left:80px;
     }
-}
+} */

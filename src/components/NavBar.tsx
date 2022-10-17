@@ -50,29 +50,29 @@ function NavBar() {
         >
         <Navbar.Brand>
           {/* <AcmeLogo /> */}
-          <img width='40px'src={Logo}
+          <Link><img width='40px'src={Logo}
           onClick={() => scrollToSection(landing)}
-          />
+          /></Link>
         </Navbar.Brand>
         <Spacer x={15} />
         <Navbar.Content
-        hideIn="xs"
+        // hideIn="xs"
         activeColor={'secondary'}
         variant="underline">
           <Navbar.Link
-          hideIn='sm'
+          // hideIn='xs'
           className='switchy'
           ><Switch
           checked={true}
           size='xl'
-          iconOn={<BsSunFill />}
-          iconOff={<BsMoonStarsFill />}
+          iconOn={<BsMoonStarsFill />}
+          iconOff={<BsSunFill />}
           color='secondary'
           onChange={()=>themeToggler()}
           /></Navbar.Link>
         </Navbar.Content>
           <Navbar.Content
-          hideIn="xs" variant="underline">
+          hideIn="sm" variant="underline">
             <Navbar.Link
             className='ContactMe'
             as={Button}

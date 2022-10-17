@@ -49,17 +49,10 @@ function ModalProjects() {
 
   const previous = () => {
     const condition = selectedIndex > 0;
-    // const nextIndex = condition ? selectedIndex - 1 : images.length - 1;
-    // setSelectedImage(images[nextIndex]);
-    // setSelectedIndex(nextIndex);
     selectNewProjects(selectedIndex, projects, false);
   };
 
   const next = () => {
-    // const condition = selectedIndex < images.length;
-    // const nextIndex = condition ? selectedIndex + 1 : 0;
-    // setSelectedImage(images[nextIndex]);
-    // setSelectedIndex(nextIndex);
     selectNewProjects(selectedIndex, projects);
   };
 
@@ -187,12 +180,6 @@ function ModalProjects() {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Button auto flat color="secondary" onClick={() => setVisible(false)}>
-            Close
-          </Button> */}
-          {/* <Button auto onClick={() => setVisible(false)}>
-            Agree
-          </Button> */}
         </Modal.Footer>
       </Modal>
     </div>
